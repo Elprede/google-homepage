@@ -13,19 +13,22 @@
 
     header .leftHeader {
         position: absolute;
-        margin: 7px 0 0 2px;
+        margin: 7px 0 0 0;
+        display: flex;
 
     }
 
     header .rightHeader {
-      
+        position: static;
         margin: 7px 0 0 auto;
+        display: flex;
+        opacity: 1;
+        
         
     }
 
     a {
-        padding-left: 15px;
-        
+        padding-left: 18px;
         text-decoration: none;
         color: #000;
         opacity: 0.75;
@@ -40,20 +43,40 @@
         text-decoration: none;
     }
 
+    .rightHeaderLinks {
+        padding-left: 15px;
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.87);
+        opacity: 1;
+        
+    }
+
+    
+
     .appicon {
-        width: 25px;
+        width: 20px;
         height: 25px;
         overflow: hidden;
         display: flex;
-        position: absolute;
-        
         
         
     }
 
     .appicon img {
-       margin: -41px 0px 0px -134px;
-        
+        margin: -41px 0px 0px -132px;
+        opacity: 0.75;
+    }
+
+    .appicon img:hover {
+        opacity: 1;
+       
+    }
+
+    .signin {
+        background-color: blue;
+        color: white;
+        display:inline-block
+        justify-content: center;
     }
 
 
@@ -70,16 +93,19 @@
             <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwilto_DxtHpAhWmzTgGHbRaAO0QpMwCCAQ&url=https%3A%2F%2Fstore.google.com%2FAU%3Futm_source%3Dhp_header%26utm_medium%3Dgoogle_ooo%26utm_campaign%3DGS100042%26hl%3Den-AU&usg=AOvVaw2QTjSfyJOuuEsvoduPyA2s">Store</a>
         </div>
         <div class="rightHeader">
-            <a href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a>
-            <a href="https://www.google.com.au/imghp?hl=en&tab=wi&ogbl">Images</a>
-            
-            <div class="appicon">
-                <a href="#">
-                    <img src="images/i1_1967ca6a.png" alt="Google applications icon.">
-                </a>
+            <a class="rightHeaderLinks" href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a>
+            <a class="rightHeaderLinks" href="https://www.google.com.au/imghp?hl=en&tab=wi&ogbl">Images</a>
+            <a href="https://www.google.com.au/intl/en/about/products?tab=wh">
+                <div class="appicon">
+                     <img src="images/i1_1967ca6a.png" alt="Google applications icon." />
+                </div>
+            </a>
+            <div>
+                <a href="https://accounts.google.com/ServiceLogin?hl=en&amp;passive=true&amp;continue=https://www.google.com/">Sign In</a>
+
             </div>
-           
-            profilelogo
+        
+            
         </div>
 
         <div></div>
