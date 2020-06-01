@@ -6,8 +6,8 @@
 
     header {
         display: flex;
-        padding: 8px 0px 30px 0px;
-        font-family: arial,sans-serif;
+        padding: 8px 0px 70px 0px;
+        font-family: arial, sans-serif;
         font-size: 13px;
     }
 
@@ -23,16 +23,9 @@
         margin: 7px 0 0 auto;
         display: flex;
         opacity: 1;
-         
+
     }
 
-    a {
-        padding-left: 18px;
-        text-decoration: none;
-        color: #000;
-        opacity: 0.75;
-        
-    }
 
     a:hover {
         text-decoration: underline;
@@ -47,7 +40,7 @@
         text-decoration: none;
         color: rgba(0, 0, 0, 0.87);
         opacity: 1;
-        
+
     }
 
     .appicon {
@@ -56,7 +49,7 @@
         overflow: hidden;
         display: flex;
         margin-top: -3px;
-        
+
     }
 
     .appicon img {
@@ -66,7 +59,7 @@
 
     .appicon img:hover {
         opacity: 1;
-       
+
     }
 
     .buttonbackground {
@@ -75,10 +68,10 @@
     }
 
     .buttonbackground2 {
-        
+
         padding: 5px 10px 5px 10px;
         margin-top: -5px;
-        
+
     }
 
     .button {
@@ -91,7 +84,7 @@
         color: white;
         padding-left: 0;
         opacity: 1;
-        
+
     }
 
     .button:hover {
@@ -99,26 +92,29 @@
     }
 
     .center {
-       display: flex;
-       align-items: center;
-       flex-direction: column;
-       
-       
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+
     }
 
     .googleImage {
-        
-        border: 1px solid black;
         width: 400px;
-        
+
     }
 
     .agoogleImage {
         opacity: 1;
     }
 
+    form {
+        padding-top: 20px;
+    }
+
     .searchbox {
         display: flex;
+        position: relative;
         justify-content: center;
         border: 1px solid #dfe1e5;
         border-radius: 24px;
@@ -126,12 +122,12 @@
         margin: 0 auto;
         height: 44px;
         width: 582px;
-        
+
     }
 
     .searchbox:hover {
-        border-color: rgba(223,225,229,0);
-        box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+        border-color: rgba(223, 225, 229, 0);
+        box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
     }
 
 
@@ -139,8 +135,8 @@
         width: 20px;
         fill: #9AA0A6;
         padding-left: 12px;
-        padding-right: 10px;
-        
+        padding-right: 14px;
+
     }
 
     .searchBar {
@@ -151,59 +147,232 @@
 
     input {
         font-size: 16px;
-        color: rgba(0,0,0,.87);
+        color: rgba(0, 0, 0, .87);
         word-wrap: break-word;
         background-color: transparent;
     }
 
+    .centerButtons {
+        padding-top: 20px
+    }
+
+    .googleSearchButton {
+        background-color: #f2f2f2;
+        border: 1px solid #f2f2f2;
+        border-radius: 4px;
+        color: #5F6368;
+        font-family: arial, sans-serif;
+        font-size: 14px;
+        margin: 11px -4px;
+        padding: 0 16px;
+        line-height: 27px;
+        height: 36px;
+        min-width: 54px;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .googleSearchButton:hover {
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        background-color: #f8f8f8;
+        border: 1px solid #c6c6c6;
+        color: #222;
+        background-image: -moz-linear-gradient(top, #f8f8f8, #f1f1f1);
+    }
+
+    .googleSearchButton:focus {
+        border: 1px solid #4d90fe;
+        outline: none;
+    }
+
+    .feelingLuckyButton {
+        background-color: #f2f2f2;
+        border: 1px solid #f2f2f2;
+        border-radius: 4px;
+        color: #5F6368;
+        font-family: arial, sans-serif;
+        font-size: 14px;
+        margin: 11px 10px;
+        padding: 0 16px;
+        line-height: 27px;
+        height: 36px;
+        min-width: 54px;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .feelingLuckyButton:hover {
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        background-color: #f8f8f8;
+        border: 1px solid #c6c6c6;
+        color: #222;
+        background-image: -moz-linear-gradient(top, #f8f8f8, #f1f1f1);
+    }
+
+    .feelingLuckyButton:focus {
+        border: 1px solid #4d90fe;
+        outline: none;
+        float: left;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border-top: 1px solid #e4e4e4;
+        color: rgb(95, 99, 104);
+        font-size: 14px;
+
+
+    }
+
+    li {
+        display: inline;
+        color: rgb(95, 99, 104);
+        font-size: 14px;
+
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        height: 5rem;
+        background: #f2f2f2;
+        line-height: 38px;
+        min-width: 100%;
+        margin-left: -10px;
+        border-top: 1px solid #e4e4e4;
+        color: rgb(95, 99, 104);
+        font-size: 14px;
+        font-family: arial, sans-serif;
+
+    }
+
+    .foobar {
+        margin: 0;
+        padding-left: 27px;
+        overflow: hidden;
+        background: #f2f2f2;
+        line-height: 40px;
+        min-width: 980px;
+
+
+
+    }
+
+    a {
+        padding-left: 18px;
+        text-decoration: none;
+        color: #000;
+        opacity: 0.75;
+
+    }
+
+    ul .leftFooter {
+        float: left;
+        padding-left: 9px;
+        overflow: hidden;
+
+    }
+
+    ul .rightFooter {
+        float: right;
+        padding-right: 27px;
+        overflow: hidden;
+    }
+
+    .footerLinks {
+        color: #5f6368;
+        opacity: 1;
+        font-size: 14px;
+        font-family: arial, sans-serif;
+    }
 </style>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>This is Google Homepage</title>
-    </head>
-    <header>
-        <div class="leftHeader">
-            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwilto_DxtHpAhWmzTgGHbRaAO0QkNQCCAM&url=https%3A%2F%2Fabout.google%2F%3Ffg%3D1%26utm_source%3Dgoogle-AU%26utm_medium%3Dreferral%26utm_campaign%3Dhp-header&usg=AOvVaw2eoSQBKcSVSQWl9TTf1SqD">About</a>
-            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwilto_DxtHpAhWmzTgGHbRaAO0QpMwCCAQ&url=https%3A%2F%2Fstore.google.com%2FAU%3Futm_source%3Dhp_header%26utm_medium%3Dgoogle_ooo%26utm_campaign%3DGS100042%26hl%3Den-AU&usg=AOvVaw2QTjSfyJOuuEsvoduPyA2s">Store</a>
-        </div>
-        <div class="rightHeader">
-            <a class="rightHeaderLinks" href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a>
-            <a class="rightHeaderLinks" href="https://www.google.com.au/imghp?hl=en&tab=wi&ogbl">Images</a>
-            <a href="https://www.google.com.au/intl/en/about/products?tab=wh">
-                <div class="appicon">
-                     <img src="images/i1_1967ca6a.png" alt="Google applications icon." />
-                </div>
-            </a>
-            <div class="buttonbackground">
-                <div class="buttonbackground2">
-                    <a href="https://accounts.google.com/ServiceLogin?hl=en&amp;passive=true&amp;continue=https://www.google.com/" class="button">Sign In</a>
-                </div>
+
+<head>
+    <meta charset="UTF-8">
+    <title>This is Google Homepage</title>
+</head>
+<header>
+    <div class="leftHeader">
+        <a
+            href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwilto_DxtHpAhWmzTgGHbRaAO0QkNQCCAM&url=https%3A%2F%2Fabout.google%2F%3Ffg%3D1%26utm_source%3Dgoogle-AU%26utm_medium%3Dreferral%26utm_campaign%3Dhp-header&usg=AOvVaw2eoSQBKcSVSQWl9TTf1SqD">About</a>
+        <a
+            href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwilto_DxtHpAhWmzTgGHbRaAO0QpMwCCAQ&url=https%3A%2F%2Fstore.google.com%2FAU%3Futm_source%3Dhp_header%26utm_medium%3Dgoogle_ooo%26utm_campaign%3DGS100042%26hl%3Den-AU&usg=AOvVaw2QTjSfyJOuuEsvoduPyA2s">Store</a>
+    </div>
+    <div class="rightHeader">
+        <a class="rightHeaderLinks" href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a>
+        <a class="rightHeaderLinks" href="https://www.google.com.au/imghp?hl=en&tab=wi&ogbl">Images</a>
+        <a href="https://www.google.com.au/intl/en/about/products?tab=wh">
+            <div class="appicon">
+                <img src="images/i1_1967ca6a.png" alt="Google applications icon." />
+            </div>
+        </a>
+        <div class="buttonbackground">
+            <div class="buttonbackground2">
+                <a href="https://accounts.google.com/ServiceLogin?hl=en&amp;passive=true&amp;continue=https://www.google.com/"
+                    class="button">Sign In</a>
             </div>
         </div>
+    </div>
 
-    </header>
-    <body>
-        <div class="center">
-            <a href="https://www.google.com/" class="agoogleImage">
-                <img src="images/googlelogo_color_272x92dp.png" alt="Google Logo." class="googleImage">
-            </a>
-            <div>
-                <form action="https://www.google.com/search" style="overflow:visible" data-submitfalse="q" method="GET" name="f" role="search">
-                    <div class="searchbox">
-                        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
-                        </svg>
-                        <input Type="text" class="searchBar">
-                    </div>
-                    
-                </form>
+</header>
+
+<body>
+    <div class="center">
+        <a href="https://www.google.com/" class="agoogleImage">
+            <img src="images/googlelogo_color_272x92dp.png" alt="Google Logo." class="googleImage">
+        </a>
+        <form action="/search" style="overflow:visible" data-submitfalse="q" method="GET" name="f" role="search">
+            <div class="searchbox">
+                <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                        d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                    </path>
+                </svg>
+                <input Type="text" class="searchBar" maxlength="2048" aria-autocomplete="both" aria-haspopup="false"
+                    autocapitalize="off" autocomplete="off" autofocus="">
             </div>
+            <div class="centerButtons">
+                <center>
+                    <input class="googleSearchButton" value="Google Search" type="submit">
+                    <input class="feelingLuckyButton" value="I'm Feeling Lucky" type="submit">
+                </center>
+            </div>
+        </form>
+    </div>
+</body>
+<footer>
+    <div class="foobar">
+        Australia
+    </div>
+    <ul>
+        <div class="leftFooter">
+            <li><a class="footerLinks"
+                    href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwi88YKF0ODpAhUNzzgGHQGNAc0QkdQCCBY&url=https%3A%2F%2Fwww.google.com%2Fintl%2Fen_au%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw3EoLqm3tGm1TtoeTUWp8NY">Advertising</a>
+            </li>
+            <li><a class="footerLinks"
+                    href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwi88YKF0ODpAhUNzzgGHQGNAc0QktQCCBc&url=https%3A%2F%2Fwww.google.com%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw2SJ4zwRVXKyZr53qG9dm4K">Business</a>
+            </li>
+            <li><a class="footerLinks" href="https://google.com/search/howsearchworks/?fg=1">How Search works</a></li>
+        </div>
+        <div class="rightFooter">
+            <li><a class="footerLinks"
+                    href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwi88YKF0ODpAhUNzzgGHQGNAc0Q8awCCBI&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Ffg%3D1&usg=AOvVaw12z8DS9cd-g0Aokit_wxri">Privacy</a>
+            </li>
+            <li><a class="footerLinks"
+                    href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwi88YKF0ODpAhUNzzgGHQGNAc0Q8qwCCBM&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Ffg%3D1&usg=AOvVaw3sEM_N0elgYQx8WbCXpj3n">Terms</a>
+            </li>
+            <li><a class="footerLinks"
+                    href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwi88YKF0ODpAhUNzzgGHQGNAc0Qzq0CCBQ&url=https%3A%2F%2Fwww.google.com%2Fpreferences%3Fhl%3Den&usg=AOvVaw0XvhSqpc_GFt9aG_mRLp1F">Settings</a>
+            </li>
         </div>
 
+    </ul>
+</footer>
 
-        <div>
-            
-        </div>
-    </body>
 </html>
